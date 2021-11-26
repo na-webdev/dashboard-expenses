@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: 'Poppins', sans-serif; }
+
+body .container {
+  background-color: #101010;
+  max-width: 1300px;
+  border-radius: 30px;
+  padding: 20px; }
+
+.left-box {
+  color: white;
+  padding: 60px; }
+  .left-box .card {
+    background-color: transparent;
+    border: none;
+    width: fit-content; }
+    .left-box .card img {
+      width: 72px;
+      height: 72px;
+      border-radius: 13px;
+      object-fit: cover; }
+    .left-box .card .card-body {
+      padding-left: 0; }
+    .left-box .card .card-text {
+      color: gray; }
+  .left-box .img-box {
+    position: relative;
+    width: fit-content; }
+    .left-box .img-box span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: red; }
+  .left-box .list-group {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 100px; }
+    .left-box .list-group li {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      font-size: 25px;
+      color: gray;
+      margin-bottom: 30px; }
+      .left-box .list-group li:nth-child(2) {
+        color: white; }
+
+.right-box {
+  border-radius: 30px;
+  height: 100%; }
+  .right-box .right-main-box {
+    padding: 60px; }
+    .right-box .right-main-box p + img {
+      width: 100%; }
+    .right-box .right-main-box ul p {
+      margin: 0; }
+    .right-box .right-main-box ul li {
+      padding-bottom: 7px;
+      margin-top: 25px; }
+      .right-box .right-main-box ul li span {
+        font-weight: bold; }
+      .right-box .right-main-box ul li:first-child {
+        border-bottom: .3px solid #dedede4d; }
+      .right-box .right-main-box ul li i {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: block;
+        line-height: 48px;
+        text-align: center;
+        background-color: #32A7E2;
+        color: white; }
+      .right-box .right-main-box ul li .fa-bus {
+        background-color: #B548C6; }
+      .right-box .right-main-box ul li .fa-home {
+        background-color: #FF8700; }
+      .right-box .right-main-box ul li .today-content {
+        gap: 20px; }
+      .right-box .right-main-box ul li .fa-burger {
+        background-color: red; }
+      .right-box .right-main-box ul li .fa-play-circle {
+        background-color: green; }
+      .right-box .right-main-box ul li .amount-today {
+        font-weight: bold; }
+      .right-box .right-main-box ul li p:nth-child(2) {
+        color: gray; }
+  .right-box .right-aside-box {
+    height: 100%;
+    padding: 76px 40px 60px;
+    background-color: #F9FAFC;
+    border-radius: 0 30px 30px 0; }
+    .right-box .right-aside-box > p:first-child {
+      font-size: 18px;
+      font-weight: bold; }
+    .right-box .right-aside-box ul {
+      padding: 0;
+      list-style: none;
+      font-size: 13px;
+      margin-bottom: 100px; }
+      .right-box .right-aside-box ul li {
+        margin-top: 30px; }
+      .right-box .right-aside-box ul progress {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 4px; }
+      .right-box .right-aside-box ul progress[value]::-webkit-progress-bar {
+        background-color: #ECEFF5; }
+      .right-box .right-aside-box ul progress[value]::-webkit-progress-value {
+        background-color: #31BA96; }
+    .right-box .right-aside-box .present-flower {
+      width: 100%;
+      background-color: #EDF0F6;
+      border-radius: 15px;
+      padding: 50px 25px 25px;
+      position: relative; }
+      .right-box .right-aside-box .present-flower img {
+        position: absolute; }
+      .right-box .right-aside-box .present-flower img:first-of-type {
+        top: -30px;
+        left: 20px; }
+      .right-box .right-aside-box .present-flower img:last-of-type {
+        top: -50px;
+        right: 20px; }
+      .right-box .right-aside-box .present-flower p:first-of-type {
+        font-weight: bold;
+        margin: 20px 0 4px; }
+      .right-box .right-aside-box .present-flower p:last-of-type {
+        font-size: 13px;
+        margin: 0 0 20px; }
+      .right-box .right-aside-box .present-flower button {
+        background-color: #101010;
+        color: white;
+        padding: 6px 40px;
+        border-radius: 8px;
+        font-size: 13px;
+        display: block;
+        width: 100%;
+        margin: 0 auto; }
+
+@media screen and (max-width: 992px) {
+  .left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .left-box .img-box {
+      margin: 0 auto; }
+    .left-box .card {
+      text-align: center; }
+      .left-box .card img {
+        width: 90px;
+        height: 90px; }
+      .left-box .card .card-body {
+        padding: 20px; }
+        .left-box .card .card-body .card-title, .left-box .card .card-body p {
+          font-size: 28px; }
+    .left-box .list-group {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 0; }
+      .left-box .list-group li {
+        margin: 0; }
+
+  .right-aside-box {
+    border-bottom-left-radius: 30px !important; } }
+@media screen and (max-width: 500px) {
+  body .container {
+    border-radius: 0; }
+
+  .right-box .right-main-box {
+    padding: 30px;
+    font-size: 14px; } }
+
+/*# sourceMappingURL=style.css.map */

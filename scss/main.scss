@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  .container {
+    background-color: #101010;
+    max-width: 1300px;
+    border-radius: 30px;
+    padding: 20px;
+  }
+}
+
+
+
+.left-box {
+  color: white;
+  padding: 60px;
+  .card {
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+
+    img {
+      width: 72px;
+      height: 72px;
+      border-radius: 13px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding-left: 0;
+    }
+
+    .card-text {
+      color: gray;
+    }
+  }
+
+  .img-box {
+    position: relative;
+    width: fit-content;
+    span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: red;
+    }
+  }
+
+  .list-group {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 100px;
+
+    li {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      font-size: 25px;
+      color: gray;
+      margin-bottom: 30px;
+
+      &:nth-child(2) {
+        color: white;
+      }
+    }
+  }
+}
+
+.right-box {
+  border-radius: 30px;
+  height: 100%;
+
+  .right-main-box {
+    padding: 60px;
+    p + img {
+      width: 100%;
+    }
+    ul {
+      p {
+        margin: 0;
+      }
+
+      li {
+        span {
+          font-weight: bold;
+        }
+        &:first-child{
+          border-bottom: .3px solid #dedede4d;
+        }
+        padding-bottom: 7px;
+        margin-top: 25px;
+        i {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          display: block;
+          line-height: 48px;
+          text-align: center;
+          background-color: #32A7E2;
+          color: white;
+        }
+
+        .fa-bus {
+          background-color: #B548C6;
+        }
+        .fa-home {
+          background-color: #FF8700;
+        }
+        .today-content {
+          gap: 20px;
+        }
+
+        .fa-burger {
+          background-color: red;
+        }
+
+        .fa-play-circle {
+          background-color: green;
+        }
+
+        .amount-today {
+          font-weight: bold;
+        }
+        p:nth-child(2) {
+          color: gray;
+        }
+      }
+    }
+  }
+
+  .right-aside-box {
+    > p:first-child {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    height: 100%;
+    padding: 76px 40px 60px;
+    background-color: #F9FAFC;
+    border-radius: 0 30px 30px 0;
+
+    ul {
+      padding: 0;
+      list-style: none;
+      font-size: 13px;
+      margin-bottom: 100px;
+      li {
+        margin-top: 30px;
+      }
+      progress {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 4px;
+      }
+
+      progress[value]::-webkit-progress-bar {
+        background-color: #ECEFF5;
+      }
+
+      progress[value]::-webkit-progress-value {
+        background-color: #31BA96;
+      }
+    }
+
+    .present-flower {
+      width: 100%;
+      background-color: #EDF0F6;
+      border-radius: 15px;
+      padding: 50px 25px 25px;
+      position: relative;
+      img {
+        position: absolute;
+      }
+
+      img:first-of-type {
+        top: -30px;
+        left: 20px;
+      }
+
+      img:last-of-type {
+        top: -50px;
+        right: 20px;
+      }
+      p:first-of-type {
+        font-weight: bold;
+        margin: 20px 0 4px;
+      }
+      p:last-of-type {
+        font-size: 13px;
+        margin: 0 0 20px;
+      }
+
+      button {
+        background-color: #101010;
+        color: white;
+        padding: 6px 40px;
+        border-radius: 8px;
+        font-size: 13px;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .img-box {
+      margin: 0 auto;
+    }
+    .card {
+      text-align: center;
+      img {
+        width: 90px;
+        height: 90px;
+      }
+      .card-body {
+        padding: 20px;
+        .card-title, p {
+          font-size: 28px;
+        }
+      }
+    }
+    .list-group {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 0;
+      li {
+        margin: 0;
+      }
+    }
+  }
+
+  .right-aside-box {
+    border-bottom-left-radius: 30px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    .container {
+      border-radius: 0;
+    }
+  }
+  .right-box {
+    .right-main-box {
+      padding: 30px;
+      font-size: 14px;
+    }
+  }
+}
